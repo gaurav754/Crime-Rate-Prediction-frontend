@@ -25,7 +25,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 80px 20px 20px 20px;
+  padding: 100px 20px 40px 20px;
+  overflow-y: auto;
 }
 
 .auth-background {
@@ -87,15 +88,18 @@
 }
 
 .auth-container.signup-container {
-  max-width: 900px;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .auth-card {
   background: white;
   border-radius: 12px;
-  padding: 20px;
+  padding: 32px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .auth-header {
