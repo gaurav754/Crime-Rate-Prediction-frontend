@@ -2,7 +2,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext(null);
-const API_URL = 'https://crime-rate-prediction-backend.onrender.com/api';
+const API_URL = 'https://crime-rate-prediction-backend1.onrender.com/api';
 
 // Test backend connection
 const testConnection = async () => {

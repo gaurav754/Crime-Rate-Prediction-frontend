@@ -49,12 +49,12 @@ export default function Signup() {
       
       // Test connection first
       console.log('🔍 Testing connection to backend...');
-      const testResponse = await fetch('https://crime-rate-prediction-backend.onrender.com/api/test');
+      const testResponse = await fetch('https://crime-rate-prediction-backend1.onrender.com/api/test');
       console.log('✅ Connection test successful');
       
       // Direct API call to register
       console.log('📤 Sending registration request...');
-      const response = await fetch('https://crime-rate-prediction-backend.onrender.com/api/auth/register', {
+      const response = await fetch('https://crime-rate-prediction-backend1.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
