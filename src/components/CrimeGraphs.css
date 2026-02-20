@@ -1,0 +1,270 @@
+.graphs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.graphs-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.graphs-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.graphs-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.graphs-subtitle {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #f1f5f9;
+  overflow-x: auto;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.tab-button.active {
+  background: #00d4aa;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.tab-icon {
+  font-size: 16px;
+}
+
+.tab-content {
+  min-height: 400px;
+  margin-bottom: 32px;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.chart-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  gap: 12px;
+  height: 250px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.bar {
+  width: 40px;
+  background: #00d4aa;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: all 0.3s ease;
+  min-height: 20px;
+}
+
+.bar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 212, 170, 0.3);
+}
+
+.bar-value {
+  position: absolute;
+  top: -25px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+  background: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bar-label {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-align: center;
+  transform: rotate(-45deg);
+  white-space: nowrap;
+}
+
+.pie-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pie-chart {
+  width: 250px;
+  height: 250px;
+}
+
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.stats-summary {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 24px;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  color: #00d4aa;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  font-size: 18px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .graphs-container {
+    padding: 16px;
+  }
+  
+  .graphs-card {
+    padding: 20px;
+  }
+  
+  .tabs-container {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  
+  .tab-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .bar-chart {
+    padding: 12px;
+    gap: 8px;
+  }
+  
+  .bar {
+    width: 30px;
+  }
+  
+  .bar-item {
+    min-width: 40px;
+  }
+  
+  .pie-chart-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .pie-chart {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .stats-summary {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+}
